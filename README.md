@@ -34,7 +34,8 @@ The app is just one screen with a list of promotions, displayin the follow value
 * Title
 * Price
 * Address
-Using the endpoint http://localhost:8000/api/promocion
+
+Endpoint: Using the endpoint http://localhost:8000/api/promocion
 
 
 ## Licensing, Authors, Acknowledgements
