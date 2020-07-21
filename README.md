@@ -1,5 +1,6 @@
-# Laravel API 
-Public API using Laravel, available endpoints "promocion" and "promopromotionDetail" both endpoints retrieve the data from a mysql database.
+# IONIC APP - List of promotions 
+Ionic app using react, app used to show promotions using a laravel API.
+Created for Guatemala.com 
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -8,61 +9,32 @@ Public API using Laravel, available endpoints "promocion" and "promopromotionDet
 4. [Licensing, Authors, Acknowledgements, etc.](#licensing-authors-acknowledgements)
 
 ## Installation:
-To run this project you have to have installed previusly php, composer framework and mysql. 
-1. Change the database configuration with you configuration using the .env file. 
-Example:
-    ```
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=laravel
-    DB_USERNAME=root
-    DB_PASSWORD=
-    ```
-2. Run the commands console 
+To run this project you have to have installed previusly node.js
+1. Run the commands console 
     ```
     npm install
     ```
     This command will be install in your computer all the dependencies. 
 3. Run the command in console
     ```
-    php artisan migrate
+    ionic serve
     ```
     This command will be create the tables in mysql. 
-4. Run the command in console
-    ```
-    php artisan db:seed --class=PromocionTableSeeder
-    ```
-    ```
-    php artisan db:seed --class=PromotionsDetailsTableSeeder
-    ```
-    This command will generate fake data to populate the database, with this step you'll be able to run test. 
-5. Run Laravel
-    ```
-    php artisan serve
-    ```
+4. Open the app in 
+http://localhost:8100/home
 
 ## Project Motivation
-My motivation for this project was create two endpoints for Guatemala.com with the goal to test this technology and improve my knowledge. 
+My motivation for this project was create an example app usin ionic for Guatemala.com with the goal to test this technology and improve my knowledge. 
 
 
-## Endpoints Descriptions
-The objective of this Jupyter Notebook is show all the flow and process with:
-1. http://localhost:8000/api/promocion
-This enppoint provides basic information about promotions, with the next values:
-    * Id
-    * Title
-    * Price
-    * Address
-2. http://localhost:8000/api/promotionDetail
-This endpoint provides the detail of each promotion
-    * Id
-    * Title
-    * Price
-    * latitude
-    * longitude
-    * created_at
-    * updated_at
+## Screen Descriptions
+
+1. Home Screen:
+The app is just one screen with a list of promotions, displayin the follow values:
+* Title
+* Price
+* Address
+Using the endpoint http://localhost:8000/api/promocion
 
 
 ## Licensing, Authors, Acknowledgements
